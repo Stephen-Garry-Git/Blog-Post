@@ -1,7 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const PORT = 5000;
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+
 const { v4: uuidv4 } = require('uuid'); // Add at the top
 // npm install uuid (run this in terminal if not done yet)
 
