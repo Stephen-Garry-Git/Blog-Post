@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compose Post</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="container">
+
+     <header>
+      <h1>My Blog</h1>
+      <a href="/compose" class="compose-btn">+ New Post</a>
+    </header>
+
+  <h1>Edit Post</h1>
+  <form action="/edit/<%= post.id %>" method="POST" class="compose-form">
+    <input type="text" name="postTitle" value="<%= post.title %>" required />
+    <textarea name="postBody" rows="10" required><%= post.content %></textarea>
+    <button type="submit">Update</button>
+  </form>
+</div>
+
+<footer>
+  <p>Copyright © <%= new Date().getFullYear() %></p>
+</footer>
+
+</body>
+</html>

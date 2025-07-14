@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compose Post</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>New Blog Post</h1>
+      <a href="/" class="back-btn">← Back to Home</a>
+    </header>
+
+    <form action="/compose" method="POST" class="compose-form">
+      <input type="text" name="postTitle" placeholder="Post Title" required />
+      <textarea name="postBody" rows="8" placeholder="Write your content here..." required></textarea>
+      <button type="submit">Publish</button>
+    </form>
+  </div>
+
+<footer>
+  <p>Copyright © <%= new Date().getFullYear() %></p>
+</footer>
+
+
+</body>
+</html>
