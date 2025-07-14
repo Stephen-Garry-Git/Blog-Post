@@ -105,4 +105,4 @@ This project was inspired by Paul Graham’s essays — I wanted to recreate a s
 Stephen Garry# Blog-Post
 
 ## Live Demo
-Live Demo: [Visit here]()
+Live Demo: [Visit here](https://blog-post-ocza.onrender.com/)
